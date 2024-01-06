@@ -1,0 +1,300 @@
+
+
+.logo {
+    width: 150px;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+
+}
+
+
+body {
+    font-family: "Verdana", sans-serif; 
+    min-height: 30vh; /* con esta linea alineo el elemento con respecto a arriba */
+    background-color: #4b5398;
+}
+
+
+h3 {
+    background-color: #f0f0f0; /* Fondo de color claro */
+    padding: 7px; /* Ajusta el relleno según tus necesidades */
+    border: 1px solid #efefef; /* Borde opcional */
+    border-radius: 20px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+input, select {
+    font-size: 15px;
+    color: #fff8f8;
+    width: 270px;
+    border: none;
+    border-bottom: solid #efefef 1px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    position: relative;
+    background: none;
+    z-index: 5;
+ }
+
+ #quoteInfo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textboxCompany, .textboxClient, .infoDate {
+    flex: 0;
+    margin: 0 2px;
+}
+
+
+input[type="date"] {
+    width: 150px; /* Ajusta el valor según tus necesidades */
+}
+
+.textboxCompany input[type="text"],
+.textboxClient input[type="text"],
+.textboxCompany input[type="email"],
+.textboxClient input[type="email"] {
+    font-size: 12px; /* Ajusta el valor según tus necesidades */
+    margin-bottom: 0px;
+}
+
+
+.textboxCompany input[type="text"]::placeholder,
+.textboxClient input[type="text"]::placeholder,
+.textboxCompany input[type="email"]::placeholder,
+.textboxClient input[type="email"]::placeholder {
+    color: #fffefe; /* Cambia el color según tus preferencias */
+}
+
+.textboxCompany input[type="company"]::placeholder,
+.textboxClient input[type="client"]::placeholder,
+.textboxCompany input[type="company"],
+.textboxClient input[type="client"] {
+    color: #fffefe;
+    font-weight: bold;
+}
+
+.filatabla {
+    display: flex;
+    border-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.price {
+    width: 100px;
+    text-align: center;
+}
+.discount, .units {
+    width: 80px;
+    text-align: center;
+}
+.total {
+    width: 150px;
+    text-align: center;
+}
+
+.infoDate {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 15px;
+    display: inline;
+    align-items: left;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.item {
+    width: 280px;
+    text-align: center;
+}
+
+.encabezadoCuadro {
+    background-color: rgb(225, 51, 51);
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    width: 798px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezadoCuadro label {
+    border: 1px solid #f06d6d;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+}
+
+/* Establece el ancho para cada etiqueta según tus necesidades */
+.encabezadoCuadro label.item {
+    flex: 2.6; /* Por ejemplo, el doble de ancho */
+}
+
+.encabezadoCuadro label.units {
+    flex: 0.95; /* Por ejemplo, la mitad del ancho */
+}
+
+.encabezadoCuadro label.price {
+    flex: 1.5; /* Por ejemplo, un 50% más ancho */
+}
+
+.encabezadoCuadro label.discount {
+    flex: 0.8; /* Por ejemplo, igual al ancho de 'units' */
+}
+
+.encabezadoCuadro label.total {
+    flex: 1.5; /* Por ejemplo, un 50% más ancho que 'discount' */
+}
+
+.filatabla {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filatabla input {
+    flex: 1; /* Ajusta el espaciado según tus necesidades */
+    margin-right: 8px; /* Margen derecho para separar los elementos */
+}
+
+.filatabla input.item {
+    color: black;
+    flex: 2.9; /* Por ejemplo, el doble de ancho */
+}
+
+.filatabla input.units {
+    color: black;
+    flex: 1; /* Por ejemplo, la mitad del ancho */
+}
+
+.filatabla input.price {
+    color: black;
+    flex: 1.6; /* Por ejemplo, un 50% más ancho */
+}
+
+.filatabla input.total {
+    color: black;
+    flex: 1.6; /* Por ejemplo, un 50% más ancho que 'discount' */
+}
+
+.container {
+    display: flex;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: 400px;
+    color: rgb(10, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right-content {
+    background-color: #f0f0f0;
+    padding: 10px; /* le da margen a los costados */
+    border-radius: 20px;
+    margin-right: -30px;
+    width: 50%; /* Ajusta el ancho según tus necesidades y deja espacio entre ambos */
+}
+
+
+h4 {
+    font-size: 14px;
+    width: 200px;
+    text-align: left; 
+    border-bottom: 1px solid #7a7a7a;
+    height: 20px;
+    margin-top: 5px;
+        
+}
+
+
+#subTotal::before,
+#taxes::before,
+#finalTotal::before,
+#shipping::before {
+    content: "$";
+}
+
+#discount::after {
+    content: "%";
+}
+
+
+
+/* Puedes ajustar los estilos según tus necesidades */
+#subTotal {
+    color: #f06d6d;
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+    width: 110px;
+    text-align: center;
+}
+
+
+
+#discount {
+    color: #f06d6d;
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+    width: 62px;
+    text-align: center;
+}
+
+
+#taxes {
+    color: #f06d6d;
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+    width: 127px;
+    text-align: center;
+}
+
+
+#shipping,
+#finalTotal {
+    color: #f06d6d;
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+    width: 103px;
+    text-align: center;
+}
+
+/* Puedes agregar más estilos según sea necesario */
+
+    
+#notes {
+    color: white; /* Establece el color del texto a blanco */
+    width: 500px;
+    height: 210px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    vertical-align: top;
+    text-align: center;
+    background-color: transparent;
+    border: none; /* Elimina el borde predeterminado del textarea */
+    padding-bottom: 5px; /* Ajusta según tus preferencias para el espacio entre el texto y la línea */
+    margin-right: 40px;
+}
+
+#notes::placeholder {
+    color: white; /* Establece el color del placeholder a blanco */
+}
+
+
+p {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+

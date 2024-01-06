@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quoter</title>
+
+</head>
+<body>
+
+<div class="header">
+       
+    </div>
+
+ <h2>
+    <div id="quoteInfo">
+            <div class="textboxCompany">
+                <input type="company" placeholder="Company Name">
+                <input type="text" placeholder="Address">
+                <input type="text" placeholder="Phone">
+                <input type="email" placeholder="E-mail">
+            </div>
+            <div class="infoDate">
+                <img src="quoter LARGE.png" alt="Logo" class="logo">
+                <input type="date">
+              </div>
+            <div class="textboxClient">
+                <input type="client" placeholder="Client">
+                <input type="text" placeholder="Address">
+                <input type="text" placeholder="Phone">
+                <input type="email" placeholder="E-mail">
+            </div>
+
+        </div>   
+ </h2>
+
+<h3>
+
+<div id="cuadro">
+    <div class="encabezadoCuadro">
+        <label class="item">ITEM</label>
+        <label class="units">UNITS</label>
+        <label class="price">PRICE</label>
+        <label class="total">TOTAL</label>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+    <div class="filatabla">
+        <input type="text" class="item" placeholder="Item">
+        <input type="number" class="units" placeholder="Units" oninput="calculateTotal(this)">
+        <input type="number" class="price" placeholder="Price" oninput="calculateTotal(this)">
+        <input type="number" class="total" placeholder="Total" readonly>
+    </div>
+ 
+ </div>
+
+</h3>
+<div class="container">
+    <div class="left-content">
+        <textarea id="notes" placeholder="______________________________ NOTES ______________________________"></textarea>
+    </div>
+
+
+
+    <div class="right-content">
+        <!-- Contenido derecho -->
+        <h4>Sub Total: <input type="number" id="subTotal" readonly></input></h4>
+        <h4>Discount (%): <input type="number" id="discount" oninput="calculateFinalTotal()"></h4>
+        <h4>Taxes: <input type="number" id="taxes" oninput="calculateFinalTotal()"></h4>
+        <h4>Shipping: <input type="number" id="shipping" oninput="calculateFinalTotal()"></h4>
+        <h4>Total: <span id="finalTotal">0</span></h4>
+        <!-- Agrega aquí cualquier contenido adicional -->
+    </div>
+</div>
+</div>
+    <p>QUOTER IS A CREATON OF LEV 2024 - contact us at lev.swdev@gmail.com</p>
+    </body>
+    <script src="script.js"></script>
+
+</html>
+
+
